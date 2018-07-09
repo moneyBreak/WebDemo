@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Java EE 6">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../taglibs-standard-impl-1.2.5.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
