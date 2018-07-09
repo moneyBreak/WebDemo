@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework</title>
+    <style>
+        #LoginWindow{
+            width:360px;
+            height: 410px;
+            background-color: blanchedalmond;
+            padding-top: 46px;
+            padding-left: 35px;
+        }
+        #LoginText{
+            font-size: 30px;
+            color: gray;
+        }
+        #LoginInput{
+            margin-top: 20px;
+            line-height: 38px;
+            width: 290px;
+            height: 120px;
+        }
+        .input input{
+            width: 290px;
+            height: 38px;
+            line-height:38px;
+            border: 1px solid darkgray;
+            color: darkgray;
+            vertical-align:middle;
+
+        }
+        #LoginButton{
+            width: 290px;
+            height: 40px;
+            line-height:40px;
+            background-color: blue;
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="LoginWindow">
+    <div id="LoginText">欢迎登陆！</div>
+    <div id="LoginInput">
+        <div class="input">
+            <input id="account" placeholder="账号：" />
+        </div>
+        <div class="input">
+            <input id="pass" placeholder="密码："  />
+        </div>
+        <div class="input">
+            <div>
+                <img src="yzm.png" style="width: 120px;overflow: hidden;float: left"/>
+            </div>
+            <input placeholder="验证码" style="text-decoration: underline;float: left;width: 168px;">
+        </div>
+    </div>
+    <button id="LoginButton" onclick="clickLength()">登陆</button>
+    <div id="ForgetPass">忘记密码
+        <input type="checkbox"/>
+    </div>
+    <div id="dia" style="background-color: white;height: 20px;color: black">
+    </div>
+</div>
+
+<script>
+    function clickLength(){
+        var input = document.getElementById("pass");
+        var dia = document.getElementById("dia");
+        if(input.value.length<6 || input.value.length>16){
+            dia.innerHTML = "输入不合法！";
+        }else {
+            dia.innerHTML = "输入合法";
+        }
+    }
+</script>
+</body>
+</html>
