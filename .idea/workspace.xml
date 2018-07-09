@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40bf80b9-f160-4a6a-bd00-aed9ede2c598" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/web/html/Test.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/Test.html" afterDir="false" />
-    </list>
+    <list default="true" id="40bf80b9-f160-4a6a-bd00-aed9ede2c598" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/html/Test.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="349">
@@ -66,6 +64,15 @@
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -165,7 +172,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -185,11 +192,6 @@
             <path>
               <item name="WebDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebDemo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebDemo" type="b2602c69:ProjectViewProjectNode" />
@@ -435,7 +437,7 @@
       <workItem from="1531032104806" duration="8783000" />
       <workItem from="1531096046069" duration="12620000" />
       <workItem from="1531120137314" duration="975000" />
-      <workItem from="1531121983079" duration="1210000" />
+      <workItem from="1531121983079" duration="1462000" />
     </task>
     <task id="LOCAL-00001" summary="create">
       <created>1531120176119</created>
@@ -462,7 +464,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44268000" />
+    <option name="totallyTimeSpent" value="44520000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -818,9 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebDemo.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -835,6 +834,13 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
         </state>
       </provider>
     </entry>
