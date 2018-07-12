@@ -4,8 +4,9 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
     <welcome-file-list>
-        <welcome-file>ModeLogin.html</welcome-file>
+        <welcome-file>Login.html</welcome-file>
     </welcome-file-list>
+    <!--登陆的servlet设置-->
     <servlet>
         <servlet-name>Login</servlet-name>
         <servlet-class>WebDemo.Servlet.LoginServlet</servlet-class>
@@ -14,7 +15,7 @@
         <servlet-name>Login</servlet-name>
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
-    
+    <!--登陆的二维码设置-->
     <servlet>
         <servlet-name>authimage</servlet-name>
         <servlet-class>WebDemo.util.AuthImage</servlet-class>
@@ -23,4 +24,33 @@
         <servlet-name>authimage</servlet-name>
         <url-pattern>/authimage</url-pattern>
     </servlet-mapping>
+<!--修改个人信息-->
+    <servlet>
+        <servlet-name>ChangeUserInfo</servlet-name>
+        <servlet-class>WebDemo.Servlet.ChangeUserInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChangeUserInfo</servlet-name>
+        <url-pattern>/changeUserInfo</url-pattern>
+    </servlet-mapping>
+    <!--查询事件-->
+    <servlet>
+        <servlet-name>search</servlet-name>
+        <servlet-class>WebDemo.Servlet.SearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>search</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+    <!--新增事务-->
+    <servlet>
+        <servlet-name>add</servlet-name>
+        <servlet-class>WebDemo.Servlet.AddAffairServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>add</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>

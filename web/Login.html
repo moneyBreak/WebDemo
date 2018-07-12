@@ -2,78 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Homework</title>
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
-        #LoginWindow{
-            width:360px;
-            height: 410px;
-            background-color: blanchedalmond;
-            padding-top: 46px;
-            padding-left: 35px;
+        #box{
+            width:300px;
+            height: 260px;
+            position: fixed;
+            top:50%;
+            left: 50%;
+            margin-left: -150px;
+            margin-top: -130px;
         }
-        #LoginText{
-            font-size: 30px;
-            color: gray;
-        }
-        #LoginInput{
-            margin-top: 20px;
-            line-height: 38px;
-            width: 290px;
-            height: 120px;
-        }
-        .input input{
-            width: 290px;
-            height: 38px;
-            line-height:38px;
-            border: 1px solid darkgray;
-            color: darkgray;
-            vertical-align:middle;
 
-        }
-        #LoginButton{
-            width: 290px;
-            height: 40px;
-            line-height:40px;
-            background-color: blue;
-            text-align: center;
-            color: white;
-            margin-top: 10px;
+        .form-box{
+            padding-top:0px;
         }
     </style>
+
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/jquery/particle.js"></script>
 </head>
 <body>
-<div id="LoginWindow">
-    <div id="LoginText">欢迎登陆！</div>
-    <div id="LoginInput">
-        <div class="input">
-            <input id="account" placeholder="账号：" />
-        </div>
-        <div class="input">
-            <input id="pass" placeholder="密码："  />
-        </div>
-        <div class="input">
-            <div>
-                <img src="yzm.png" style="width: 120px;overflow: hidden;float: left"/>
+<canvas class="particle"></canvas>
+<div class="panel panel-default" id="box">
+    <div class="panel-body form-box">
+        <h3>欢迎登陆！</h3>
+        <form role="form" action="login" method="get">
+            <div class="form-group">
+                <input type="text" id="username" name="username" class="form-control"placeholder="账号:" >
             </div>
-            <input placeholder="验证码" style="text-decoration: underline;float: left;width: 168px;">
-        </div>
+            <div class="form-group">
+                <input type="password" id="pass" name="pass" class="form-control" placeholder="密码:">
+            </div>
+            <div class="form-group">
+                <div class="col-sm-6" style="padding-left: 0px;">
+                    <input type="text"  name="check" class="form-control" placeholder="验证码:">
+                </div>
+                <div class="col-sm-6"><img src=""  class="img-responsive">
+                    <img src="authimage" />
+                </div>
+            </div>
+            <div class="form-group" >
+                <input type="submit"  class="form-control btn btn-info  " value="登录" >
+            </div>
+            <div id="message">${requestScope.error}</div>
+        </form>
     </div>
-    <button id="LoginButton" onclick="clickLength()">登陆</button>
-    <div id="ForgetPass">忘记密码
-        <input type="checkbox"/>
-    </div>
-    <div id="dia" style="background-color: white;height: 20px;color: black">
-    </div>
-</div>
 
+</div>
 <script>
-    function clickLength(){
-        var input = document.getElementById("pass");
-        var dia = document.getElementById("dia");
-        if(input.value.length<6 || input.value.length>16){
-            dia.innerHTML = "输入不合法！";
-        }else {
-            dia.innerHTML = "输入合法";
+    function checkLogin() {
+        var login = document.getElementById("username");
+        var pass = document.getElementById("pass");
+        var msg = document.getElementById("message");
+        // 先判断是否用户名为6-16位，满足后再检查是否输入正确
+
+        if(login.value.length >=6 &&login.value.length <=16){
+            if(login.value =="admin1" &&pass.value=="123"){
+                msg.innerHTML="输入正确"
+            }else{
+                msg.innerHTML="用户名或者密码输入错误";
+            }
+        }else{
+            msg.innerHTML="用户名长度为6-16位！"
         }
     }
 </script>
